@@ -24,4 +24,8 @@ You might find these [tutorials](https://scratch.mit.edu/projects/editor/?tutori
 
 If, along the way, you find it too difficult to implement some feature, try not to fret; alter your design or work around the problem. If you set out to implement an idea that you find fun, odds are you won’t find it too hard to satisfy the above requirements.
 
+#### Grade
 
+**8/8 100%** - as per below:
+
+![credit grade](/Week_0_Scratch/scratch_grade.png)
