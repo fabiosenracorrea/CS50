@@ -18,7 +18,7 @@ I`ve set up this repository to hold each and every project the students must com
 Every week (or so) the respective module will be added and linked here, containing all the projects relative to it. The last commit of the project will be once all the requirements are fulfilled.
 
 * [Week 0 - Scratch](https://github.com/fabiosenracorrea/CS50/tree/master/Week_0_Scratch)
-* [Week 1 - C]()
+* [Week 1 - C](https://github.com/fabiosenracorrea/CS50/tree/master/Week_1_C)
 * [Week 2 - Arrays]()
 * [Week 3 - Algorithms]()
 * [Week 4 - Memory]()
