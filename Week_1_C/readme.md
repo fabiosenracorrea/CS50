@@ -2,7 +2,7 @@
 
 On this directory, the exercises of Week 1 are covered.
 
-### What was week 0 all about?
+### What was week 1 all about?
 
 Week 1 covers an introduction on the programming language C.
 
@@ -88,3 +88,7 @@ In a file called credit.c in a ~/pset1/credit/ directory, write a program that p
 ### Comments
 
 C is a very constrained language, and learning a bit better how to interact with it helps to improve my overall algorithm logic.
+
+###### Feedback
+
+As always, any feedback is widely encouraged.
