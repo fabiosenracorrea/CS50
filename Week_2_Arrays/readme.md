@@ -10,9 +10,9 @@ Details can be checked [here](https://cs50.harvard.edu/x/2020/weeks/2/).
 
 ### What was the exercise here?
 
-On this week, much like last week, there was an exercise having two options, that diverged on difficulty. The student has to choose only one the options, and it was chosen the harder one. Details [here](https://cs50.harvard.edu/x/2020/psets/2/).
+On this week, much like last week, there was an exercise having two options, that diverged on difficulty. The student has to choose only one of the options, and it was chosen the harder one. Details [here](https://cs50.harvard.edu/x/2020/psets/2/).
 
-#### Exercise 1 - Substitution
+### Exercise 1 - Substitution
 
 Design and implement a program, substitution, that encrypts messages using a substitution cipher.
 
