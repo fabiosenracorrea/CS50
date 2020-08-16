@@ -20,7 +20,7 @@ Details can be checked [here](https://cs50.harvard.edu/x/2020/weeks/3/).
 
 On this week, much like week 1, there was an obligatory exercise and a split, having two options, that diverged on difficulty. The student has to choose only one of the options, and it was chosen the harder one. Details [here](https://cs50.harvard.edu/x/2020/psets/3/).
 
-### Exercise 1 - PLurality
+### Exercise 1 - Plurality
 
 Implement a program that runs a plurality election, per the below.
 
@@ -57,7 +57,7 @@ Complete the implementation of plurality.c in such a way that the program simula
 
 **14/14 100%** - as per below:
 
-![plurality grade](/Week_3_Arrays/pluralityGrade.png)
+![plurality grade](./pluralityGrade.png)
 
 ### Exercise 2 - Tideman
 
@@ -125,7 +125,7 @@ The function should print out the name of the candidate who is the source of the
 
 **18/18 100%** - as per below:
 
-![plurality grade](/Week_3_Arrays/tidemanGrade.png)
+![plurality grade](./tidemanGrade.png)
 
 ### Comments
 

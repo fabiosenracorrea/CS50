@@ -23,7 +23,7 @@ On this week, an introduction task (which was basically a Hello World, but with 
 
 Toward the beginning of World 1-1 in Nintendo’s Super Mario Brothers, Mario must hop over adjacent pyramids of blocks, per the below.
 
-![Mario](/Week_1_C/pyramids.png)
+![Mario](./pyramids.png)
 
 Let’s recreate those pyramids in C, albeit in text, using hashes (#) for bricks. Each hash is a bit taller than it is wide, so the pyramids themselves are also be taller than they are wide.
 
@@ -35,7 +35,7 @@ If the user doesn’t, in fact, input a positive integer between 1 and 8, inclus
 
 **10/10 100%** - as per below:
 
-![mario grade](/Week_1_C/mario10.png)
+![mario grade](./mario10.png)
 
 #### Exercise 2 - Credit
 
@@ -83,7 +83,7 @@ In a file called credit.c in a ~/pset1/credit/ directory, write a program that p
 
 **15/15 100%** - as per below:
 
-![credit grade](/Week_1_C/credit_grade.png)
+![credit grade](./credit_grade.png)
 
 ### Comments
 

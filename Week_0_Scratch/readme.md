@@ -28,7 +28,7 @@ If, along the way, you find it too difficult to implement some feature, try not 
 
 **8/8 100%** - as per below:
 
-![credit grade](/Week_0_Scratch/scratch_grade.png)
+![credit grade](./scratch_grade.png)
 
 ###### Feedback
 

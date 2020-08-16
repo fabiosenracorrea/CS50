@@ -29,7 +29,7 @@ Design and implement a program, substitution, that encrypts messages using a sub
 
 **15/15 100%** - as per below:
 
-![credit grade](/Week_2_Arrays/arrayExs.png)
+![credit grade](./arrayExs.png)
 
 ### Comments
 
