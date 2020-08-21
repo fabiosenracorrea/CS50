@@ -2,9 +2,9 @@
 
 On this directory, the exercises of Week 3 are covered.
 
-### What was week 2 all about?
+### What was week 3 all about?
 
-Week 2 covers an introduction on Algorithm logic and recursion. On these topics, it was covered:
+Week 3 covers an introduction on Algorithm logic and recursion. On these topics, it was covered:
 
 * C's structures
 * Linear Search
