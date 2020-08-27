@@ -10,9 +10,30 @@ Details can be checked [here](https://cs50.harvard.edu/x/2020/weeks/2/).
 
 ### What was the exercise here?
 
-On this week, much like last week, there was an exercise having two options, that diverged on difficulty. The student has to choose only one of the options, and it was chosen the harder one. Details [here](https://cs50.harvard.edu/x/2020/psets/2/).
+On this week, much like last week, there was an obligatory exercise and another having two options, that diverged on difficulty. The student has to choose only one of the options, and it was chosen the harder one. Details [here](https://cs50.harvard.edu/x/2020/psets/2/).
 
-### Exercise 1 - Substitution
+### Exercise 1 - Readability
+
+Now it’s time to put all the pieces together! Recall that the Coleman-Liau index is computed using the formula:
+
+```
+index = 0.0588 * L - 0.296 * S - 15.8
+```
+
+where L is the average number of letters per 100 words in the text, and S is the average number of sentences per 100 words in the text.
+
+Modify readability.c so that instead of outputting the number of letters, words, and sentences, it instead outputs the grade level as given by the Coleman-Liau index (e.g. "Grade 2" or "Grade 8"). Be sure to round the resulting index number to the nearest whole number!
+
+If the resulting index number is 16 or higher (equivalent to or greater than a senior undergraduate reading level), your program should output "Grade 16+" instead of giving the exact index number. If the index number is less than 1, your program should output "Before Grade 1".
+
+#### Grade
+
+**11/11 100%** - as per below:
+
+![readability grade](./readability.png)
+
+
+### Exercise 2 - Substitution
 
 Design and implement a program, substitution, that encrypts messages using a substitution cipher.
 
@@ -29,13 +50,15 @@ Design and implement a program, substitution, that encrypts messages using a sub
 
 **15/15 100%** - as per below:
 
-![credit grade](./arrayExs.png)
+![substitution grade](./arrayExs.png)
 
 ### Comments
 
 Studying C having JS/Python knowledge is challenging. This exercise would be a cake walk on these languages, but the constraints is C take it to the next level. The puzzling part of the solution was a miss-handle of memory when outputting the crypted text.
 
 The solution first presented here still needs to be refactored, especially when we analyse the size of 'main'. Nonetheless, it handles every possible input and use-case as per described on the instructions.
+
+**08/27/2020 Update:** When doing this week originally, somehow the student missed the exercise 'readability' as an obligatory exercise. It was after a course check on August that this mistake was noticed, and promptly fixed. That's why the completion date on Readability is so far ahead in time when comparing with Substitution.
 
 ###### Feedback
 
