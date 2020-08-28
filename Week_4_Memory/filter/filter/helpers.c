@@ -51,6 +51,8 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
+    // because every new pixel value depends on 4-9 original values
+    // we need to create a diff struct to hold the altered pixels.
     RGBTRIPLE(*newImage)[width] = calloc(height, width * sizeof(RGBTRIPLE));
 
     for (int i = 0; i < height; i++)
@@ -64,10 +66,12 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             float squareCount = 0.0;
 
             // finds what squares exists and collects their data
+            // here -1 means the line above and 1 the line below the current line
             for (int w = -1; w < 2; w ++)
             {
                 for (int k = -1; k < 2; k++)
                 {
+                  // coordinates can't exceed image's size.
                     if ((i + w) >= 0 && (j + k) >= 0 && (i + w) < height && (j + k) < width)
                     {
                         accBlue += image[i + w][j + k].rgbtBlue;
@@ -96,6 +100,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
         }
     }
 
+  // every memory borrowed needs to be freed.
     free(newImage);
 }
 
