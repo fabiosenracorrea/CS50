@@ -12,7 +12,7 @@ But as everything in Computer Science, this 'power' does not come for free. We a
 
 As this week is a introduction to a new language, most of the exercises here are re-runs of previously solved challenges, now using Python. You can check the list of problems for this week right [here](https://cs50.harvard.edu/x/2020/psets/6/).
 
-Some of the exercises has a 'choose one out of two' option, and the harder version was chosen everytime.
+Some of the exercises has a 'choose one out of two' option, and the harder version was chosen every time.
 
 ### Exercise 1 - Hello
 
