@@ -25,4 +25,4 @@ Every week (or so) the respective module will be added and linked here, containi
 * [Week 5 - Data Structures](https://github.com/fabiosenracorrea/CS50/tree/master/Week_5_Data_Structures)
 * [Week 6 - Python](https://github.com/fabiosenracorrea/CS50/tree/master/Week_6_Python)
 * [Week 7 - SQL](https://github.com/fabiosenracorrea/CS50/tree/master/Week_7_SQL)
-* [Week 8 - Information](https://github.com/fabiosenracorrea/CS50/tree/master/Week_8_Information)
+* [Week 8 - Web Track](https://github.com/fabiosenracorrea/CS50/tree/master/Week_8_Web_Track)
