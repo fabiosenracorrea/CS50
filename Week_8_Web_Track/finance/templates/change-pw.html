@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Change Password
+{% endblock %}
+
+{% block main %}
+
+    <div class="dashboard-title">
+        <h1>Change your password</h1>
+    </div>
+
+    <form action="/change-pw" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="old" placeholder="Old Password" type="password" required>
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="new" placeholder="New Password" type="password" required>
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="confirmation" placeholder="Confirm New Password" type="password" required>
+        </div>
+        <button class="btn btn-primary" type="submit">Change Password</button>
+
+        {% if warning %}
+            <p class="warning-pw">{{ warning }}</p>
+        {% endif %}
+    </form>
+{% endblock %}

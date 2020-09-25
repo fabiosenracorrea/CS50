@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Dashboard
+{% endblock %}
+
+{% block main %}
+
+    <div class="dashboard-title">
+        <h1>Dashboard</h1>
+    </div>
+
+    <table>
+        <tr>
+            <th><strong>Stock</strong></th>
+            <th><strong>Name</strong></th>
+            <th><strong>Shares</strong></th>
+            <th><strong>Price</strong></th>
+            <th><strong>Total</strong></th>
+        </tr>
+        {% for stock in stocks %}
+            <tr class={{ stock["class"] }}>
+                <td class="rrrow">{{ stock["stock"] }}</td>
+                <td class="rrrow">{{ stock["company_name"] }}</td>
+                <td class="rrrow">{{ stock["overall_quantity"] }}</td>
+                <td class="rrrow">{{ "${:.2f}".format(stock["price"]) }}</td>
+                <td class="rrrow">{{ "${:.2f}".format(stock["price"] * stock["overall_quantity"]) }}</td>
+            </tr>
+        {% endfor %}
+        <tr class="cash-row">
+            <td class="cash-none">CASH</td>
+            <td class="cash-none"></td>
+            <td class="cash-none"></td>
+            <td class="cash-none"></td>
+            <td class="total rrrow"><strong>{{ "${:.2f}".format(cash) }}</strong></td>
+        </tr>
+        <tr class="total-row">
+            <td class="total-none"></td>
+            <td class="total-none"></td>
+            <td class="total-none"></td>
+            <td class="total-none"></td>
+            <td class="total rrrow"><strong>{{ "${:.2f}".format(total) }}</strong></td>
+        </tr>
+    </table>
+
+{% endblock %}
+
+{% block script %}
+<script>
+</script>
+{% endblock %}

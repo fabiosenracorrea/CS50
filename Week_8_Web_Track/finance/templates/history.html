@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+
+    <div class="dashboard-title">
+        <h1>History</h1>
+    </div>
+
+    {% if history %}
+        <table>
+            <tr>
+                <th><strong>Stock</strong></th>
+                <th><strong>Type</strong></th>
+                <th><strong>Quantity</strong></th>
+                <th><strong>Price</strong></th>
+                <th><strong>Date</strong></th>
+            </tr>
+            {% for transaction in history %}
+                <tr class={{ transaction["class"] }}>
+                    <td class="rrrow">{{ transaction["stock"] }}</td>
+                    <td class="rrrow">{{ transaction["type"] }}</td>
+                    <td class="rrrow">{{ transaction["quantity"] }}</td>
+                    <td class="rrrow">{{ "${:.2f}".format(transaction["price"]) }}</td>
+                    <td class="rrrow">{{ transaction["timestamp"] }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>You did not have any transaction history.</p>
+    {% endif %}
+
+{% endblock %}
+
+{% block script %}
+<script>
+</script>
+{% endblock %}

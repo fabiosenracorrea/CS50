@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote Stock
+{% endblock %}
+
+{% block main %}
+
+    <div class="dashboard-title">
+        <h1>Search for stocks</h1>
+    </div>
+
+    {% if not price %}
+        <form action="/quote" method="post">
+            <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" id="stock" name="stock" placeholder="Stock" type="text" maxlength="5">
+            </div>
+
+            <button class="btn btn-primary" disabled id="quote-btn" type="submit">Look up</button>
+        </form>
+    {% elif not notfound  %}
+        <p>A stock of {{ companyName }} is ${{ price }}.</p>
+    {% else %}
+        <p>Couldn't find stock, please double check and <a href="/quote">try again</a>.</p>
+    {% endif %}
+
+{% endblock %}
+
+{% block script %}
+<script>
+    document.querySelector("#stock").onkeyup = function() {
+        if (document.querySelector("#stock").value) {
+            document.querySelector("#quote-btn").disabled = false;
+        } else {
+            document.querySelector("#quote-btn").disabled = true;
+        }
+    }
+</script>
+{% endblock %}

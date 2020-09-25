@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add founds
+{% endblock %}
+
+{% block main %}
+
+    <div class="dashboard-title">
+        <h1>Deposit</h1>
+    </div>
+
+    {% if not success %}
+        <form action="/deposit" method="post">
+            <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" id="deposit" name="deposit" placeholder="How much...?" type="number" min=1 step=0.25>
+            </div>
+
+            <button class="btn btn-primary" disabled id="deposit-btn" type="submit">Deposit!</button>
+        </form>
+    {% else %}
+        <p>Success! You've deposit ${{ success }} into your account. <a href="/buy">Let's invest it!</a>.</p>
+    {% endif %}
+
+{% endblock %}
+
+{% block script %}
+<script>
+    document.querySelector("#deposit").onkeyup = function() {
+        if (document.querySelector("#deposit").value) {
+            document.querySelector("#deposit-btn").disabled = false;
+        } else {
+            document.querySelector("#deposit-btn").disabled = true;
+        }
+    }
+</script>
+{% endblock %}

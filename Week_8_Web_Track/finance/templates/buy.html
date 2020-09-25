@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy Stock
+{% endblock %}
+
+{% block main %}
+
+    <div class="dashboard-title">
+        <h1>Invest</h1>
+    </div>
+
+
+    {% if std %}
+        <form action="/buy" method="post">
+            <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" id="stock" name="stock" placeholder="Stock" type="text" maxlength="5">
+            </div>
+            <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" id="qtd" name="qtd" placeholder="Quantity" type="number" step=1 min=1>
+            </div>
+
+            <button class="btn btn-primary" disabled id="quote-btn" type="submit">Buy</button>
+        </form>
+    {% else %}
+        <p>Couldn't find stock, please double check and <a href="/buy">try again</a>.</p>
+    {% endif %}
+
+{% endblock %}
+
+{% block script %}
+<script>
+    document.querySelector("#stock").onkeyup = function() {
+        if (document.querySelector("#stock").value) {
+            document.querySelector("#quote-btn").disabled = false;
+        } else {
+            document.querySelector("#quote-btn").disabled = true;
+        }
+    }
+</script>
+{% endblock %}
