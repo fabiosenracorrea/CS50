@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Guess</title>
+  <script src="https://kit.fontawesome.com/2c91ae5b1f.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Ranchers&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+  <div class="game-container">
+    <div class="game">
+      <h1 id="title">Guess the Color!</h1>
+
+      <p class="guess-text">Nível <span id="level">0</span> - <span id="rgb-color"></span></p>
+
+      <p id="answer" class="command-text">Escolha uma cor</p>
+
+      <div class="ball-container">
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+      </div>
+
+      <div class="score-container">
+        <h2>Score: <span id="score">0</span></h2>
+      </div>
+
+      <div class="button-container">
+        <button id="reset-game">Reset</button>
+        <div class="hard-mode-container">
+          <input type="checkbox" name="hard-mode" id="hard-mode-checker">
+          <label for="hard-mode-checker">Hard Mode</label>
+        </div>
+        <div class="hp-container not-hard-mode">
+          <div class="hp"></div>
+          <div class="hp"></div>
+          <div class="hp"></div>
+        </div>
+        <div class="high-scores not-hard-mode">
+          <p id="highest-score" class='high-score'>Score Record: <span id="high-score-container">0</span></p>
+          <p id="highest-level" class='level-record'>Level Record: <span id="level-score-container">0</span></p>
+          <p id="highest-streak" class='streak-record'>Streak Record: <span id="streak-score-container">0</span></p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div id="modal" class="modal hide">
+    <div class="modal-msg">
+      <p>Você Perdeu!</p>
+    </div>
+  </div>
+
+  <!-- <footer>
+    <p>Developed by @fabioscx</p>
+    <p>Contact me on fabiosenracorrea@gmail.com</p>
+  </footer> -->
+
+  <footer>
+    <div class="dev-by">
+        <p>Made by Fábio Senra Corrêa.</p>
+    </div>
+
+    <div class="links">
+      <a href="../index.html">Main Page</a>
+      <a href="../stomatopoda-page/index.html">Stomatopoda Page</a>
+      <a href="../color_guess/index.html">Color Guess Game</a>
+      <a href="../framework-form/form.html">Bootstrap on Forms!</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

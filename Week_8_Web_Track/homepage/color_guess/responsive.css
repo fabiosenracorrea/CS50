@@ -1,0 +1,64 @@
+@media (max-width: 640px) {
+
+  .game-container {
+    height: 100%;
+    margin-top: 8px;
+  }
+
+  .game {
+    padding: 20px 8px;
+    height: 80%;
+  }
+
+  /* title */
+  h1 {
+    text-align: center;
+    width: 80%;
+    margin-bottom: 2%;
+  }
+
+  .guess-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2%;
+  }
+
+  /* balls */
+  .ball-container {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1% 0;
+  }
+
+  .ball {
+    margin: 4px 12px;
+  }
+
+  /* hardmode */
+  .score-container {
+    margin-top: 12px;
+    padding-top: 10px;
+  }
+
+  .hp-container {
+    left: -10%;
+    top: -65%
+  }
+
+  .high-scores {
+    right: -40%;
+    top: 0;
+  }
+
+  .button-container {
+    padding-top: 100px;
+  }
+
+  /* footer */
+  footer {
+    margin-top: 30px;
+  }
+}

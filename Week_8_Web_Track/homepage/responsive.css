@@ -1,0 +1,117 @@
+@media (max-width: 710px) {
+
+    /* header */
+
+    header .header-content img {
+        margin-right: 12px;
+    }
+
+    #page-home .content header .header-content a {
+        font-size: 19px;
+        text-align: center;
+        margin-right: 15px;
+    }
+
+    /* first section */
+
+    main #home {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    main #home .personal-greeting {
+        margin-right: 0;
+    }
+
+    main #home .personal-greeting h1 {
+        font-size: 42px;
+        text-align: center;
+        margin-bottom: 0px;
+
+    }
+    main #home .personal-greeting p {
+        font-size: 23px;
+    }
+
+    main #home .personal-picture img{
+        width: 300px;
+    }
+
+    main #home .personal-picture {
+        order: -1;
+    }
+
+    /* projects section */
+
+    .tool-tip {
+        bottom: 65%;
+        left: 20%;
+    }
+
+    main #projects .cards {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    main #projects .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    main #projects .project-header p.click-instruction {
+        margin-bottom: 16px;
+    }
+
+}
+
+@media (min-width:201px) and (max-width: 300px) {
+    main #home .personal-picture img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 200px) {
+    main #home .personal-picture img {
+        width: 100px;
+    }
+}
+
+
+@media (min-width:711px) and (max-width: 1037px) {
+    main .home-bg {
+      position: relative;
+      padding: 8px;
+    }
+
+    main #home .personal-greeting h1 {
+        font-size: 75px;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 5%;
+        left: 0;
+    }
+
+    main #home {
+      flex-direction: column;
+    }
+
+    main #home .personal-greeting {
+        font-size: 23px;
+        order: 2;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    main #home .personal-picture {
+        order: 1;
+        margin-top: 120px;
+        display: flex;
+        justify-content: center;
+    }
+
+    main #home .personal-picture img {
+      width: 300px;
+    }
+}

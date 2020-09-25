@@ -1,0 +1,311 @@
+:root {
+  --secundary-color: rgb(43, 170, 221);
+  --iced-grey: #f0f0f5;
+}
+
+* {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.game-container {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+}
+
+.game {
+  align-items: center;
+  background-color: rgb(240 , 240 , 245);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 90%;
+}
+
+/* tittle */
+h1 {
+  animation: colors 2.0s infinite;
+  background-color: aqua;
+  border-radius: 8px;
+  font-size: 44px;
+  letter-spacing: 10px;
+  padding: 6px;
+}
+
+@keyframes colors {
+  14% {background-color: mediumvioletred;}
+  14% {color: burlywood;}
+
+  28% {background-color: lime;}
+  28% {color: darkblue;}
+
+  42% {background-color: indigo;}
+  42% {color: white;}
+
+  56% {background-color: red;}
+  56% {color: aqua;}
+
+  70% {background-color: lightslategray;}
+  70% {color: mediumvioletred;}
+
+  88% {background-color: slateblue;}
+  88% {color: black;}
+
+  100% {background-color: blue;}
+  100% {color: black;}
+}
+
+/* level */
+.guess-text {
+  font-size: 30px;
+}
+
+.guess-text span {
+  margin-left: 6px;
+}
+
+/* command */
+.command-text {
+  font-weight: 700;
+}
+
+/* balls */
+.ball-container {
+  display: flex;
+}
+
+.ball {
+  border: 1px solid black;
+  border-radius: 100%;
+  cursor: pointer;
+  height: 60px;
+  margin: 0 12px;
+  width: 60px;
+}
+
+/* score */
+h2 {
+  font-family: Ranchers, cursive;
+  font-size: 64px;
+  letter-spacing: 4px;
+}
+
+/* buttons */
+.button-container {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+}
+
+button {
+  background-color: black;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  padding: 12px;
+}
+
+button:active {
+  background-color: white;
+  color: black;
+}
+
+button:focus {
+  border: none;
+  outline: none;
+}
+
+/* hard-mode */
+input[ type = 'checkbox' ] {
+  cursor: pointer;
+}
+
+.hard-mode-container {
+  margin-top: 10px;
+}
+
+.hp-container {
+  align-items: center;
+  border-radius: 8px;
+  display: flex;
+  height: 40px;
+  justify-content: space-evenly;
+  left: 220%;
+  position: absolute;
+  width: 120px;
+}
+
+.hp {
+  align-items: center;
+  background-color: darkred;
+  border-radius: 100%;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  width: 30px;
+}
+
+.hp:after {
+  color: white;
+  content: '\f004';
+  font-family: 'Font Awesome 5 Free', sans-serif;
+  font-size: 90%;
+  font-weight: 900;
+}
+
+.high-scores {
+  background-color: saddlebrown;
+  border-radius: 8px;
+  color: white;
+  opacity: 0.9;
+  padding: 8px 8px 8px 30px;
+  position: absolute;
+  right: 160%;
+  top: -15%;
+  width: 140px;
+}
+
+.high-scores p {
+  font-weight: 600;
+  margin: 3px 0px;
+  position: relative;
+}
+
+.high-score:before {
+  content: '\f5a2';
+  font-family: 'Font Awesome 5 Free', sans-serif;
+  font-size: 100%;
+  font-weight: 900;
+  position: absolute;
+  right: 105%;
+  top: 1px;
+}
+
+.level-record:before {
+  content: '\f005';
+  font-family: 'Font Awesome 5 Free', sans-serif;
+  font-size: 100%;
+  font-weight: 900;
+  position: absolute;
+  right: 104%;
+  top: 1px;
+}
+
+.streak-record:before {
+  content: '\f140';
+  font-family: 'Font Awesome 5 Free', sans-serif;
+  font-size: 100%;
+  font-weight: 900;
+  position: absolute;
+  right: 105%;
+  top: 1px;
+}
+
+.not-hard-mode {
+  display: none;
+}
+
+.hp1 {
+  display: none;
+}
+
+.hp2 {
+  display: none;
+}
+
+.hp3 {
+  display: none;
+}
+
+/* footer */
+/* footer {
+  background-color: lavender;
+  display: flex;
+  font-size: 80%;
+  justify-content: space-between;
+  padding: 8px;
+} */
+
+/* modal */
+.modal {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  opacity: 0.9;
+  align-items: center;
+  display: flex;
+  transition: all 0.4s ease;
+}
+
+.modal-msg {
+  background-color: black;
+  height: 80%;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-msg p {
+  font-size: 45px;
+  color: white;
+  font-family: Ranchers, cursive;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.modal-msg p:after {
+  content: '\f7a9';
+  font-family: 'Font Awesome 5 Free', sans-serif;
+  font-size: 200%;
+  font-weight: 900;
+  position: absolute;
+  right: 35%;
+  top: -200%;
+}
+
+.hide {
+  display: none;
+}
+
+footer {
+  background-color: var(--secundary-color);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+footer .dev-by {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+footer .dev-by p {
+  color: white;
+}
+
+footer .links {
+  padding: 10px;
+}
+
+footer .links a {
+  display: block;
+  margin: 5px 0;
+  text-decoration: none;
+  color: white;
+}
+
+footer .links a:hover {
+  opacity: 0.8;
+}

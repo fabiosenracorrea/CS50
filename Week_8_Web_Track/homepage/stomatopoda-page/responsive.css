@@ -1,0 +1,114 @@
+@media (max-width: 684px) {
+
+  /* header section */
+
+  .header section h1  {
+    font-size: 30px;
+  }
+
+  /* table */
+
+  .bio-table table {
+    text-align: center;
+  }
+
+  /* article */
+
+  .stomatopoda-article h2 {
+    font-size: 20px;
+  }
+
+  /* facts section */
+  .facts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .facts .fact {
+    height: 45vh;
+  }
+
+  .fact p {
+    font-size: 15px;
+    margin-top: 48px;
+  }
+
+  .fact img {
+    height: 25vh;
+  }
+
+}
+
+@media (max-width: 535px) {
+
+
+  .stomatopoda-article .introduction {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* table */
+
+  .bio-table table {
+    font-size: 14px;
+  }
+
+  /* iframe */
+
+  .complementary-video {
+    width: 80%;
+    margin: 24px auto 24px;
+    padding: 12px 8px;
+    order: 4;
+  }
+
+  .complementary-video iframe{
+    width: 90%;
+  }
+
+  .complementary-video p {
+    font-size: 13px;
+  }
+
+  /* facts */
+
+  .fact img {
+    height: 20vh;
+  }
+
+  .facts .fact {
+    height: 50vh;
+  }
+
+  .fact:nth-child(2) img {
+    height: 17vh;
+  }
+
+}
+
+@media (max-width: 370px) {
+
+  .header-nav img {
+    width: 40px;
+    margin-right: 10px;
+  }
+
+  nav a {
+    margin-right: 0;
+  }
+
+  .facts .fact {
+    height: 55vh;
+  }
+}
+
+@media (min-width:685px) and (max-width: 920px) {
+    /* facts section */
+    .facts-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .fact p {
+        font-size: 14px;
+    }
+}
+

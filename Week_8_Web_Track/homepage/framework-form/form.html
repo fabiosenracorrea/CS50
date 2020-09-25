@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>6.2 Exercise - Frameworks/libraries</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="datePicker.css">
+  <link rel="stylesheet" href="validation.css">
+</head>
+<body>
+  <div class="container shadow-lg p-3 mb-5 bg-white rounded-lg mt-5">
+    <form action="" id="form-s">
+      <fieldset class="form-row">
+        <legend>
+          <h2>Dados Pessoais</h2>
+        </legend>
+
+        <div class="form-group col-md-6">
+          <div class="form-group col-md-6">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" maxlength="40"  class="form-control" required>
+          </div>
+          <label for="email" class="col-md-6">Email</label>
+          <div class="form-group col-md-6 input-group mb-3">
+            <input class="form-control" type="text" name="email" id="email" data-validate-field="email" required>
+            <div class="input-group-append">
+              <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="form-group col-md-6">
+            <label for="cpf">CPF</label>
+            <input class="form-control" type="text" name="cpf" id="cpf" maxlength="11" data-validate-field="cpf" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="city">Cidade</label>
+            <input class="form-control" type="text" name="city" id="city" required>
+          </div>
+        </div>
+
+        <div class="form-group col-md-6">
+          <div class="form-group col-md-6">
+            <label for="address">Endereço</label>
+            <input class="form-control" type="text" name="address" id="address" maxlength="200" required>
+          </div>
+        </div>
+
+        <div class="form-group col-md-6">
+          <div class="form-group col-md-6">
+            <label for="address2">Complemento</label>
+            <input class="form-control" type="text" name="address2" id="address2">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="state">Estado</label>
+            <select name="state" id="state" class="form-control" required>
+              <option value="">Selecione uma cidade</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="col-md-6 form-check form-check-inline d-flex justify-content-center">
+          <label class="form-check-label mr-2" for="house">Casa</label>
+          <input class="form-check-input mr-2" type="radio" name="house" id="house" value="casa" required>
+          <label class="form-check-label mr-2" for="apartment">Apartamento</label>
+          <input class="form-check-input" type="radio" name="house" id="apartment" value="apartamento" required>
+        </div>
+      </fieldset>
+
+      <fieldset class="mt-3">
+        <legend>
+          <h2>Último Emprego</h2>
+        </legend>
+
+        <div class="form-group col-md-6">
+          <div class="form-group col-md-6">
+            <label for="resume">Resumo do Currículo</label>
+            <textarea class="form-control" name="resume" id="resume" maxlength="1000" required></textarea>
+          </div>
+        </div>
+
+        <div class="form-group col-md-6">
+          <div class="form-group col-md-6">
+            <label for="position">Cargo</label>
+            <input class="form-control" type="text" name="position" id="position" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="start">Data de início</label>
+            <input class="form-control" type="text" name="start" id="start" placeholder="dd/mm/aaaa" required>
+          </div>
+        </div>
+
+        <div class="form-group col-md-6">
+          <div class="form-group col-md-6">
+            <label for="job-description">Descrição do Cargo</label>
+            <textarea class="form-control" name="job-description" id="job-description" maxlength="500" required></textarea>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="form-group col-md-6 d-flex justify-content-center">
+        <button class="btn btn-success mr-3" type="submit">Enviar</button>
+        <input class="btn btn-danger" type="reset" value="Resetar">
+      </div>
+    </form>
+  </div>
+
+  <footer>
+    <div class="dev-by">
+        <p>Made by Fábio Senra Corrêa.</p>
+    </div>
+
+    <div class="links">
+      <a href="index.html">Main Page</a>
+      <a href="stomatopoda-page/index.html">Stomatopoda Page</a>
+      <a href="color_guess/index.html">Color Guess Game</a>
+      <a href="framework-form/form.html">Bootstrap on Forms!</a>
+    </div>
+  </footer>
+  <script src="datepickerANDfillStates.js"></script>
+  <script>
+    document.getElementById('start').DatePickerX.init();
+  </script>
+  <script src="validation.js"></script>
+</body>
+</html>

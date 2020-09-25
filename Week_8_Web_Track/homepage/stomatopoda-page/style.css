@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+:root {
+  --secundary-color: seashell;
+  --third-color: rgb(43, 170, 221);
+  --table-bg: salmon;
+  --complementary-color: orange;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(247, 126, 33);
+}
+
+body {
+  background-color: rgb(225, 233, 241);
+}
+
+/* header settings */
+
+.header{
+  background-color: var(--secundary-color);
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  padding: 6px 0 0 6px;
+}
+
+.header-nav img {
+  width: 40px;
+  margin-right: 24px;
+}
+
+nav a {
+  color: black;
+  font-size: 16px;
+  margin-right: 12px;
+  border-radius: 8px;
+  border: 2px solid var(--complementary-color);
+  padding: 6px;
+}
+
+.header-nav a:hover {
+  background-color: var(--complementary-color);
+  color: white;
+}
+
+.header section h1 {
+  margin: 16px 0 0px 24px;
+  padding-bottom: 12px;
+  font-size: 48px;
+}
+
+/* content */
+
+.content {
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: 12px;
+}
+
+.stomatopoda-article {
+  padding: 12px;
+}
+
+.stomatopoda-article h2 {
+  font-size: 26px;
+  line-height: 32px;
+  margin-bottom: 16px;
+}
+
+
+.stomatopoda-article .introduction p {
+  text-align: justify;
+  padding: 4px 8px 8px 18px;
+}
+
+/* table */
+
+.stomatopoda-article .introduction .bio-table {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0;
+}
+
+
+.bio-table table {
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
+
+.bio-table th,
+.bio-table td {
+  border: 1px solid gray;
+  padding: 8px;
+}
+
+.bio-table th {
+  background-color: var(--table-bg);
+  color: white;
+}
+
+.bio-table td {
+  background-color: white;
+}
+
+/* video on the side */
+
+.complementary-video {
+  /* isso coloca o conteúdo ao lado direto do conteúdo imediatamente abaixo dele */
+  float: right;
+  margin: 8px 8px 8px 16px;
+  text-align: center;
+  background-color: rgb(224, 196, 158);
+  padding: 8px 10px 8px 10px;
+  border-radius: 8px;
+}
+
+.complementary-video iframe{
+  margin-bottom: 6px;
+  border-radius: 8px;
+  width: 266,67px;
+  height: 150px;
+}
+
+.complementary-video p{
+  /* isso faz com que o tamanho do conteúdo seja o tamanho da caixa, o block faz o tamanho do conteúdo ser do tamanho do pai */
+  display: inline;
+}
+
+/* facts section */
+
+.facts h2 {
+  margin: 24px 0;
+}
+
+.facts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 18px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.facts .fact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secundary-color);
+  border: 1px solid var(--complementary-color);
+  padding: 4px 4px 12px 4px;
+  border-radius: 8px;
+  position: relative;
+  height: 43vh;
+}
+
+/* Usei position aqui para deixar todas as imagens e textos alinhados corretamente */
+
+.fact img {
+  height: 20vh;
+  border-radius: 8px;
+  position: absolute;
+  top: 12px;
+}
+
+.fact p {
+  padding: 6px;
+  text-align: justify;
+  width: 90%;
+  margin: 24px 0 8px;
+  position: absolute;
+  top: 20vh;
+  font-size: 15px;
+}
+
+/* referências */
+
+.references {
+  margin-top: 24px;
+}
+
+.references h3 {
+  font-size: 24px;
+}
+
+.references p {
+  margin: 12px 0 0 0;
+  text-align: justify;
+}
+
+
+/* footer */
+
+footer {
+  background-color: var(--third-color);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+footer .dev-by {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+footer .dev-by p {
+  color: white;
+}
+
+footer .links {
+  padding: 10px;
+}
+
+footer .links a {
+  display: block;
+  margin: 5px 0;
+}
+
+footer .links a:hover {
+  opacity: 0.8;
+}
