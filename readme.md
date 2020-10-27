@@ -26,4 +26,12 @@ Every week (or so) the respective module will be added and linked here, containi
 * [Week 6 - Python](https://github.com/fabiosenracorrea/CS50/tree/master/Week_6_Python)
 * [Week 7 - SQL](https://github.com/fabiosenracorrea/CS50/tree/master/Week_7_SQL)
 * [Week 8 - Web Track](https://github.com/fabiosenracorrea/CS50/tree/master/Week_8_Web_Track)
-* [Week 9 - Final Project](https://github.com/fabiosenracorrea/CS50/tree/master/Week_8_Final_Project)
+* [Week 9 - Final Project](https://github.com/fabiosenracorrea/CS50/tree/master/Week_9_Final_Project)
+
+---
+
+# Certificate
+
+After submitting every challenge presented on the course, any student that achieves 70% or more on every project is eligible to a certificate. I've proudly achieved 100% on each and every one of them (which you can verify on the respective project directories on this repo!).
+
+<img src="https://github.com/fabiosenracorrea/CS50/tree/master/Certificate/CS50x.png"  alt="cs50" width="100%" />
