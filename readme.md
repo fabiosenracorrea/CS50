@@ -35,5 +35,5 @@ Every week (or so) the respective module will be added and linked here, containi
 After submitting every challenge presented on the course, any student that achieves 70% or more on every project is eligible to a certificate. I've proudly achieved 100% on each and every one of them (which you can verify on the respective project directories on this repo!).
 
 <div style="display: flex; justify-content: center;">
-  <img src="https://github.com/fabiosenracorrea/CS50/tree/master/Certificate/CS50x.png"  alt="cs50" width="1000" />
+  <img src="https://raw.githubusercontent.com/fabiosenracorrea/CS50/master/Certificate/CS50x.png"  alt="cs50" width="1000" />
 </div>
