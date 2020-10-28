@@ -150,7 +150,7 @@ Require users’ passwords to have some number of letters, numbers, and/or symbo
 
 **1/1 100%** - as per below:
 
-![finance grade](./finace/finance_grade.png)
+![finance grade](./finance/finance_grade.png)
 
 ### Comments
 
